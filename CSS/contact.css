@@ -1,0 +1,221 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Tilt+Prism&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Poppins&family=Staatliches&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    color: white;
+    background-color: rgb(4, 4, 62);
+}
+
+nav {
+    display: flex;
+    position: sticky;
+}
+
+.logo img {
+    display: flex;
+    height: 41px;
+    width: 42px;
+    border: 0px;
+    border-radius: 25px;
+}
+
+.tits {
+    display: flex;
+    justify-content: flex-start;
+    width: 40%;
+}
+
+.Title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Staatliches', cursive;
+    font-size: 18px;
+
+}
+
+.subtitle {
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    justify-content: right;
+    width: 58%;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px 38px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li :hover {
+    color: rgb(161, 237, 161);
+}
+
+.clock {
+
+    padding: 5px 0px;
+}
+
+#time {
+    display: flex;
+    justify-content: center;
+}
+
+.date {
+    color: white;
+}
+
+.container {
+    min-width: 100%;
+    height: 88vh;
+    background:  url('../img/ctus.jpg') no-repeat scroll center center;
+    background-size: cover;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+body{
+    overflow-x: hidden;
+}
+
+
+.contactdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 155px;
+}
+
+.dheading {
+    color: #e3521a;
+    font-size: 18px;
+    margin: 7px 26px;
+}
+
+.details {
+    color: rgb(125, 125, 138);
+    font-size: 19px;
+    margin: 25px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex {
+    display: flex;
+}
+
+.contactdetails span {
+    position: relative;
+    right: 25px;
+}
+
+.contactForm {
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    margin: 0 135px;
+
+}
+
+.contactForm h2 {
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+
+.contactForm .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline: none;
+    resize: none;
+}
+
+.contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
+    color: #ff0000;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #00bcd4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+footer {
+    position: sticky;
+    background-color: rgb(4, 4, 62);
+    color: white;
+   
+}
+.copy {
+    min-height: calc(100vh - 88vh - 6vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    position: sticky;
+}
+
+.berger {
+    display: none;
+    position: absolute;
+    right: 5%;
+    top: 15px;
+    cursor: pointer;
+}
+
+.line {
+    width: 25px;
+    background-color: white;
+    height: 2px;
+    margin: 3px 3px;
+}
+
+.space{
+    font-family: 'Tilt Prism', cursive;
+    color: white;
+    font-size: 60px;
+    margin: 0 25px;
+}
